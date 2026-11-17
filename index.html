@@ -5,28 +5,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kimona — Kim Móc Len Gỗ Handmade</title>
 <style>
-  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: linear-gradient(160deg, #f7eefc, #efe3f7 55%, #e6d9f2); color: #3d2b4f; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
-  .card { background: rgba(255,255,255,.85); border-radius: 20px; padding: 40px 36px; max-width: 560px; margin: 24px; text-align: center; box-shadow: 0 12px 40px rgba(90,50,130,.18); }
-  h1 { font-size: 2.4em; margin: 0 0 6px; color: #6b3fa0; letter-spacing: 2px; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: linear-gradient(160deg, #f7eefc, #efe3f7 55%, #e6d9f2); color: #3d2b4f; min-height: 100vh; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding: 32px 20px 48px; }
+  .card { background: rgba(255,255,255,.85); border-radius: 20px; padding: 40px 36px; max-width: 560px; margin: 0 auto 36px; text-align: center; box-shadow: 0 12px 40px rgba(90,50,130,.18); }
+  h1 { margin: 0 0 6px; }
+  .logo { width: 230px; max-width: 80%; height: auto; display: block; margin: 0 auto; }
   .sub { font-size: 1.1em; color: #7a5a96; margin: 0 0 20px; }
   p { line-height: 1.7; margin: 10px 0; }
-  .pill { display: inline-block; background: #6b3fa0; color: #fff; border-radius: 999px; padding: 8px 18px; font-weight: 600; margin-top: 12px; }
   .contact { margin-top: 22px; font-size: .95em; color: #5c4a72; }
   .contact b { color: #3d2b4f; }
+  .contact a { color: #6b3fa0; font-weight: 700; text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
   .note { margin-top: 18px; font-size: .85em; color: #9787ad; }
+  h2 { text-align: center; color: #6b3fa0; margin: 8px 0 4px; font-size: 1.5em; }
+  .gal-sub { text-align: center; color: #7a5a96; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  figure { margin: 0; background: rgba(255,255,255,.85); border-radius: 16px; padding: 12px; box-shadow: 0 8px 24px rgba(90,50,130,.14); }
+  figure video { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 10px; background: #2b1d3d; display: block; }
+  figcaption { text-align: center; font-weight: 600; color: #4a3560; padding: 10px 4px 4px; }
+  figcaption span { display: block; font-weight: 400; font-size: .85em; color: #9787ad; }
 </style>
 </head>
 <body>
-  <div class="card">
-    <h1>🧶 Kimona</h1>
-    <p class="sub">Kim móc len gỗ handmade — tiện riêng theo tay bạn</p>
-    <p>Mỗi cây kim là một khúc gỗ được chọn tay, tiện tay và đánh bóng thủ công. Cán vừa tay, hạt đá theo gu của bạn.</p>
-    <span class="pill">Trang web đang thử nghiệm</span>
-    <div class="contact">
-      <p>📞 <b>0826 48 9999</b></p>
-      <p>Facebook: <b>Mona Pham</b></p>
+  <div class="wrap">
+    <div class="card">
+      <h1><img class="logo" src="logo.png" alt="Kimona"></h1>
+      <p class="sub">Kim móc len gỗ handmade — tiện riêng theo tay bạn</p>
+      <p>Mỗi cây kim là một khúc gỗ được chọn tay, tiện tay và đánh bóng thủ công. Cán vừa tay, hạt đá theo gu của bạn.</p>
+      <div class="contact">
+        <p>📞 <b>0826 48 9999</b></p>
+        <p>Fanpage: <a href="https://fb.com/kimona.offical">Kimona</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/monapham2662/">Mona Pham</a></p>
+      </div>
+      <p class="note">kimona.vercel.app — bản test</p>
     </div>
-    <p class="note">kimona.vercel.app — bản test</p>
+
+    <h2>🎬 Clip mới nhất</h2>
+    <p class="gal-sub">7 clip bản hoàn chỉnh, có nhạc — form mới nhất</p>
+    <div class="grid">
+      <figure>
+        <video controls preload="metadata" playsinline src="videos/Kimona-Reels-FB-v11-co-nhac.mp4"></video>
+        <figcaption>Clip v11<span>30 giây · có nhạc</span></figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline src="videos/Kimona-Reels-FB-v11-intro-v4-co-nhac.mp4"></video>
+        <figcaption>Clip v11 · intro v4<span>30 giây · có nhạc</span></figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline src="videos/Kimona-Reels-FB-v4-remake-intro-v4-co-nhac.mp4"></video>
+        <figcaption>Clip v4 · remake<span>có nhạc</span></figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline src="videos/Kimona-Reels-FB-v6-remake-intro-v4-co-nhac.mp4"></video>
+        <figcaption>Clip v6 · remake<span>có nhạc</span></figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline src="videos/Kimona-Reels-FB-360-remake-intro-v4-co-nhac.mp4"></video>
+        <figcaption>Clip 360 · remake<span>có nhạc</span></figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline src="videos/Kimona-Reels-FB-v31-10-remake-A-co-nhac.mp4"></video>
+        <figcaption>Clip 31-10 · remake A<span>29,5 giây · có nhạc</span></figcaption>
+      </figure>
+      <figure>
+        <video controls preload="metadata" playsinline src="videos/Kimona-Reels-FB-v31-10-remake-B-co-nhac.mp4"></video>
+        <figcaption>Clip 31-10 · remake B<span>29 giây · có nhạc</span></figcaption>
+      </figure>
+    </div>
   </div>
 </body>
 </html>
